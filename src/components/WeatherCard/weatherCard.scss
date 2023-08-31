@@ -1,0 +1,184 @@
+.card-warm{
+   background-color: #FFFAF1;
+}
+
+.card-cold{
+   background-color: #F1F2FF;
+}
+
+.card {
+   margin: 0 25px 25px 0;
+   max-width: 350px;
+   box-shadow: 0px 3px 6px #00000029;
+   border-radius: 5px;
+
+   &__container {
+      position: relative;
+      padding: 10px 15px;
+   }
+
+   &__close{
+      position: absolute;
+      top: 1%;
+      right: 1%;
+      & img{
+         width: 10px;
+      }
+   }
+
+   &__header {
+   }
+
+   &__date{
+
+   }
+
+   &__chart {
+   }
+
+   &__info {
+   }
+}
+.container {
+}
+/*************************/
+.header-card {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 5px 0 0 ;
+   &__title {
+      font-size: 16px;
+   }
+
+   &__weather {
+      display: flex;
+      align-items: center;
+      color: #C5C5C5;
+      font-weight: 300;
+      font-size: 13px;
+      & img{
+         width: 25px;
+         margin: 0 5px 0 0 ;
+      }
+   }
+}
+.show-weather {
+
+   &__text {
+   }
+}
+
+/*************************/
+
+.date{
+   font-size: 18px;
+   font-weight: 300;
+   margin: 0 0 16px 0;
+}
+
+/*************************/
+.chart {
+   margin: 0 0 17px 0;
+
+   &__degrees {
+      padding: 0 6px;
+      font-size: 6px;
+      line-height: 133%;
+      color: #C5C5C5;
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__dates {
+      font-size: 8px;
+      line-height: 150%;
+      color: #C5C5C5;
+      display: flex;
+      justify-content: space-between;
+   }
+}
+/*********************/
+
+.info {
+
+   display: flex;
+   justify-content: space-between;
+   &__degrees {
+   }
+
+   &__general {
+      text-align: right;
+   }
+}
+.degrees {
+
+   &__current {
+      display: flex;
+   }
+
+   &__feels {
+   }
+}
+.current {
+   &__value {
+      font-size: 44px;
+      padding: 15px 0;
+   }
+
+   &__unit {
+      font-size: 22px;
+      cursor: pointer;
+   }
+}
+.feels {
+
+   &__info {
+      font-size: 13px;
+      color: #C5C5C5;
+      & span{
+         font-weight: 600;
+      }
+   }
+}
+.general {
+
+   &__item {
+      padding: 10px 0 0 0;
+      font-size: 12px;
+   }
+}
+
+.unit{
+   &__delimiter{
+      color: #8D8D8D;
+      margin: 0 7px;
+   }
+
+   &__unactive{
+      color: #8D8D8D;
+   }
+}
+.item {
+   padding: 10px 0 0 0;
+   font-size: 12px;
+   &:not(:last-child){
+      margin: 0 0 5px 0;
+   }
+   & span{
+      font-weight: 600;
+      
+   }
+}
+
+.warm{
+   & span{
+      color: #FFA25B;
+   }
+}
+
+.cold{
+   & span{
+      color: #459DE9;
+   }
+}
