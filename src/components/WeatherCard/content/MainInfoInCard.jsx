@@ -12,7 +12,7 @@ const MainInfoInCard = ({ handleCardRemove, cityName, country, icon, weatherText
             <h2 className="header-card__title">{cityName}, {country}</h2>
             <div className="header-card__weather show-weather">
                {icon && (
-                  <img src={`http://openweathermap.org/img/w/${icon}.png`} alt="weather icon" />
+                  <img src={`https://openweathermap.org/img/w/${icon}.png`} alt="weather icon" />
                )}
                <span className="show-weather__text">{weatherText}</span>
             </div>
