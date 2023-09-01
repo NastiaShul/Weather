@@ -44,7 +44,11 @@ const Search = () => {
 
    const handleSubmit = (e) => {
       e.preventDefault();
-      const newCity = { name, id: nanoid() };
+      const newCity = {
+         name:
+            (name[0].toUpperCase() + name.slice(1).toLowerCase()).trim(),
+         id: nanoid()
+      };
       dispatch(addCity(newCity));
       dispatch(changeCity(""));
    }
