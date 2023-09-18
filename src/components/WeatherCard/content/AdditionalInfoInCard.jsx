@@ -19,7 +19,7 @@ const AdditionalInfoInCard = ({ getTemperature, temp, temperatureUnit, setTemper
                   <div className="current__value">
                      {getTemperature(temp) >= 0 ?
                         `+${getTemperature(temp)}` :
-                        `-${getTemperature(temp)}`}
+                        `${getTemperature(temp)}`}
                   </div>
                   <div className="current__unit unit">
                      <span
